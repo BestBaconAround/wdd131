@@ -3,31 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="style.css" rel="stylesheet">
+    <meta name="author" content="Cameron Andrews">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Cameron Andrews. Personal landing page for BYU-Idaho web development course.">
+    <title>WDD 131 - Dynamic Web Fundamentals - Cameron Andrews</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="directories/style.css">
+
+    <script src="directories/scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Cameron's Website!</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
-    <main>
-        <container>
-            
-        </container>
-        <aside>
-            
-        </aside>
-    </main>
-    <footer>
 
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a></li>
+                <li><a href="final-project/" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cameron Andrews</h1>
+
+        <div class="cards-grid">
+
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="directories/images/profile.jpg" alt="Cameron Andrews profile photo" width="400" height="300" loading="lazy">
+                <p>I'm a tech support specialist at Lion Energy and a web development student at
+                BYU-Idaho Pathway. I'm passionate about energy systems, programming, and
+                building things that actually work.</p>
+            </section>
+
+            <section class="card">
+                <h2>My Goals</h2>
+                <img src="directories/images/mountain.png" alt="Mountains representing long-term goals" width="400" height="300" loading="lazy">
+                <p>My goal is to move into a junior developer or hybrid tech role, eventually
+                working in embedded systems, IoT, and energy software. Currently building
+                skills in JavaScript, Python, and C#.</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Cameron Andrews | Utah</p>
+
+        <p id="lastModified"></p>
     </footer>
+
 </body>
 </html>
